@@ -1,0 +1,174 @@
+.dashboard-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.dashboard-page .container-fluid{
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dashboard-page aside{
+    background-color: aqua;
+    width: 15%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px 5px var(--bg-hover-color);
+    transition: all .3s;
+}
+
+.dashboard-page aside .logo{
+    width: 100%;
+    padding: 20px;
+}
+
+.dashboard-page aside .logo img{
+    width: 50%;
+    filter: invert(1);
+}
+
+.dashboard-page aside .my-profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-page aside .my-profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.dashboard-page aside .my-profile .title{
+    margin: 30px 0;
+    margin-left: 8px;
+}
+
+.dashboard-page aside .my-profile .title h5{
+    margin: 0;
+    color: var(--white-color);
+}
+
+.dashboard-page aside .my-profile .title span{
+    margin: 0;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+
+.dashboard-page aside ul{
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.dashboard-page aside ul li{
+    width: 85%;
+    background-color: var(--white-color);
+    margin: 15px 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--black-color);
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-page aside ul li.active{
+    background-color: var(--main-color);
+}
+
+.dashboard-page aside ul li svg{
+    color: var(--black-color);
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* =========================================== */
+/* =========================================== */
+
+.dashboard-page section.content{
+    width: 85%;
+    padding: 20px;
+    height: 100%;
+    /* background-color: rgba(110, 16, 16, 0.628); */
+    position: relative;
+}
+
+.dashboard-page section.content .dash-section,
+.dashboard-page section.content .users-section,
+.dashboard-page section.content .pages-section,
+.dashboard-page section.content .shop-section{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-page section.content .dash-section .shop-section button{
+    display: none;
+}
+
+
+.dashboard-page section.content .row{
+    width: 100%;
+}
+
+
+.dashboard-page section.content h3{
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+    color: var(--white-color);
+}
+
+.dashboard-page section.content h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+@media only screen and (max-width: 1400px){
+    .dashboard-page aside{
+        width: 20%;
+    }
+    .dashboard-page section.content{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 991px){
+    .dashboard-page aside{
+        width: 25%;
+    }
+    .dashboard-page section.content{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .dashboard-page aside{
+        width: 25%;
+        left: -100%;
+    }
+    .dashboard-page section.content{
+        width: 100%;
+    }
+}

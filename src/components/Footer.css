@@ -1,0 +1,145 @@
+footer{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0 30px;
+}
+
+footer h4{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+
+footer p{
+    color: var(--white-color);
+    margin-bottom: 0 !important;
+    text-transform: capitalize;
+}
+
+footer .links .logo{
+    width: 100%;
+
+}
+
+footer .links .logo img{
+    width: 90px;
+    filter: invert(1);
+}
+
+footer .links ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer .links ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+footer .links ul li svg{
+    color: var(--main-color);
+    margin-right: 8px;
+    font-size: 19px;
+}
+
+footer .links ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white-color);
+    transition: all .4s;
+}
+
+footer .links ul li a:hover{
+    color: var(--main-color);
+}
+
+footer form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer form p{
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+footer form input{
+    width: 100%;
+    margin: 15px 0;
+    height: 45px;
+    padding: 5px 15px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: var(--white-color);
+    border-bottom: 2px solid var(--white-color);
+}
+
+footer form input::placeholder{
+    color: var(--white-color);
+}
+
+footer form input:focus{
+    border-bottom-color: var(--main-color);
+}
+
+footer form button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    margin: 8px 0 15px;
+    transition: all .4s;
+}
+
+footer form button:hover{
+    background-color: var(--white-color);
+}
+
+footer form .imgs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer form .imgs img{
+    width: 20%;
+    cursor: pointer;
+}
+
+footer .copyRight{
+    border-top: 2px solid var(--bg-hover-color);
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer .copyRight p{
+    color: var(--white-color);
+}
+
+
+footer .copyRight p a{
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all .4s;
+    text-decoration: none;
+    color: var(--main-color);
+
+}
+
+footer .copyRight p a:hover{
+    color: rgb(47, 106, 255);
+}

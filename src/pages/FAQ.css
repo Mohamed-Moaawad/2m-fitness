@@ -1,0 +1,36 @@
+.faq-page{
+
+}
+
+.faq-page .content{
+    margin: 130px 0;
+}
+
+.faq-page .content .accordion-item{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--bg-hover-color);
+
+}
+
+.faq-page .content .accordion-button{
+    background-color: transparent;
+    outline: none !important;
+    color: var(--white-color);
+    font-size: 20px;
+    box-shadow: none;
+}
+
+.faq-page .content .accordion-body{
+    color: var(--text-color);
+}
+
+.accordion-button::after{
+    color: var(--white-color);
+    /* background-color: var(--white-color); */
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}

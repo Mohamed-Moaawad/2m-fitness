@@ -1,0 +1,82 @@
+/* =============================
+    start numbers-component
+================================ */
+ .numbers-component{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .numbers-component .text h5{
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+ .numbers-component .text h3{
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 3vw;
+    margin-bottom: 35px;
+
+}
+
+ .numbers-component .text h3 span{
+    color: var(--main-color);
+}
+
+ .numbers-component .text p{
+    color: var(--text-color);
+}
+
+ .numbers-component .nums{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+}
+
+ .numbers-component .nums::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+}
+ .numbers-component .nums::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+ .numbers-component .nums div{
+    width: 50%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+ .numbers-component .nums div h3{
+    font-size: 4vw;
+    color: var(--white-color);
+}
+
+ .numbers-component .nums div span{
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+/* =============================
+    end numbers-component
+================================ */

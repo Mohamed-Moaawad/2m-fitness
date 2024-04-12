@@ -1,0 +1,127 @@
+.contact-page{
+
+}
+
+.contact-page .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.contact-page .content h3{
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.contact-page .content iframe{
+    width: 100%;
+    height: 60vh;
+    margin: 60px 0;
+}
+
+.contact-page .content .contact-details{
+    width: 90%;
+    padding: 70px 50px;
+    border: 2px solid var(--white-color);
+}
+
+.contact-page .content .contact-details p{
+    color: var(--text-color);
+    margin: 25px 0;
+}
+
+.contact-page .content .contact-details ul{
+    padding: 0;
+    margin: 30px 0;
+    list-style: none;
+
+}
+
+.contact-page .content .contact-details ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-page .content .contact-details ul li svg{
+    color: var(--text-color);
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.contact-page .content .contact-details ul li span{
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.contact-page .content .contact-details ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.contact-page .content .contact-details ul li a:hover{
+    color: var(--main-color);
+}
+
+.contact-page .content form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-page .content form input{
+    width: 100%;
+    padding:20px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--bg-hover-color);
+    margin: 12px 0;
+    color: var(--white-color);
+
+}
+
+.contact-page .content form input::placeholder{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: .5px;
+}
+
+.contact-page .content form input:focus,
+.contact-page .content form textarea:focus{
+    border-left: 1px solid var(--main-color);
+
+}
+
+.contact-page .content form textarea{
+    width: 100%;
+    min-height: 150px;
+    padding:20px;
+    outline: none;
+    border: none;
+    background-color: var(--bg-hover-color);
+    margin: 12px 0;
+    color: var(--white-color);
+}
+
+.contact-page .content button{
+    width: 170px;
+    padding: 8px 0;
+    border: none;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--black-color);
+    background-color: var(--main-color);
+    transition: all .4s;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-page .content button:hover{
+    background-color: var(--white-color);
+}

@@ -1,0 +1,131 @@
+.details-page{
+    width: 100%;
+
+}
+
+.details-page .content{
+    width: 100%;
+    min-height: 100vh;
+    padding: 90px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+}
+
+.details-page .content .img{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.details-page .content .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.details-page .content .text{
+    width: 100%;
+    padding: 10px;
+}
+
+.details-page .content .text h3{
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+.details-page .content .text h4{
+    color: var(--white-color);
+    margin: 25px 0;
+}
+
+.details-page .content .text h4 sub{
+    font-style: italic;
+    color: var(--text-color);
+    text-decoration: line-through;
+}
+
+
+.details-page .content .text p{
+    color: var(--text-color);
+    letter-spacing: 1px;
+    max-width: 80%;
+}
+
+.details-page .content .text p::first-letter{
+    text-transform: capitalize;
+}
+
+.details-page .content .text .btns{
+    display: flex;
+}
+
+.details-page .content .text .btns button{
+    padding: 8px 12px;
+    margin: 30px 15px 30px 0;
+    border: none;
+    background-color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.details-page .content .text .favorite-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-hover-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.details-page .content .text .favorite-icon svg{
+    color: var(--white-color);
+    font-size: 25px;
+    transition: all .4s;
+}
+
+.details-page .content .text .favorite-icon:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.details-page .content .text .favorite-icon:hover svg{
+    color: var(--main-color);
+}
+
+.details-page .content .text .add-to-cart{
+    width: 60%;
+    height: 50px;
+    background-color: var(--main-color);
+    border: none;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 500;
+    margin: 50px 0;
+    transition: all .4s;
+}
+
+.details-page .content .text .add-to-cart:hover{
+    background-color: var(--white-color);
+}
+
+.details-page .content .text .cards-img{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-top: 1px solid var(--white-color);
+}
+
+.details-page .content .text .cards-img img{
+    width: 20%;
+}

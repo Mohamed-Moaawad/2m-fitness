@@ -1,0 +1,210 @@
+.about-page{
+
+}
+
+.about-page .content{
+    margin-top: 130px;
+}
+
+/*===============================
+    start about 1
+================================= */
+.about-page .content section.about-1{
+    width: 100%;
+    min-height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page .content section.about-1 .img{
+    width: 100%;
+    height: 100%;
+}
+.about-page .content section.about-1 .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-page .content section.about-1 .text h5{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+.about-page .content section.about-1 .text h3{
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.about-page .content section.about-1 .text p{
+    color: var(--text-color);
+}
+
+/*===============================
+    end about 1
+================================= */
+
+
+
+/*===============================
+    start about 2
+================================= */
+.about-page section.about-2{
+    width: 100%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../public/images/about/Slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-page section.about-2 .text h3{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.about-page section.about-2 .text p{
+    color: var(--text-color);
+}
+/*===============================
+    end about 2
+================================= */
+
+
+/*===============================
+    start marquee
+================================= */
+
+.about-page section.marquee{
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page section.marquee ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-page section.marquee ul li{
+    display: inline-block;
+    margin-right: 50px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+.about-page section.marquee ul li img{
+    width: 80px;
+    margin-right: 20px;
+}
+
+/*===============================
+    end marquee
+================================= */
+
+
+/*===============================
+    start team
+================================= */
+
+.about-page section.team{
+    width: 100%;
+    min-height: 100vh;
+    padding: 90px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page section.team .card-team{
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--white-color);
+}
+
+.about-page section.team .card-team .img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page section.team .card-team .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-page section.team .card-team .img .social-media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-page section.team .card-team .img .social-media a.icon{
+    width: 45px;
+    height: 45px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transform: translateY(50px);
+}
+
+.about-page section.team .card-team .img .social-media a.icon:nth-child(1){
+    transition: all .3s;
+}
+.about-page section.team .card-team .img .social-media a.icon:nth-child(2){
+    transition: all .5s;
+}
+.about-page section.team .card-team .img .social-media a.icon:nth-child(3){
+    transition: all .7s;
+}
+.about-page section.team .card-team .img .social-media a.icon:nth-child(4){
+    transition: all 1s;
+}
+
+.about-page section.team .card-team .img:hover a.icon{
+    transform: translateY(-20px);
+}
+
+.about-page section.team .card-team .img .social-media a.icon svg{
+    color: var(--bg-hover-color);
+}
+
+.about-page section.team .card-team .img .social-media a.icon:hover{
+    background-color: var(--main-color);
+}
+
+.about-page section.team .card-team .text{
+    text-align: center;
+    padding: 15px;
+}
+
+.about-page section.team .card-team .text h4, 
+.about-page section.team .card-team .text span{
+    color: var(--white-color);
+    text-transform: uppercase;
+
+}
+/*===============================
+    end team
+================================= */
