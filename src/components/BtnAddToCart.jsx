@@ -31,6 +31,7 @@ const BtnAddToCart = ({item, user}) => {
             image: item.data().image,
             anotherImage: item.data().anotherImage,
             inCart: true,
+            quantity: 1,
         })
 
         setLoaderIcon(false)

@@ -115,10 +115,19 @@ const Navbar = ({path}) => {
                             </div>
                             {user ? (
                                     <Link to='' className='profile-img'>
-                                    <img src={user.photoURL} alt="profile" />
+                                        {user && user.photoURL ? (
+                                            <img src={user.photoURL} alt="profile" />
+                                        ):(
+                                            <img src="images/user-found.png" alt="user" />
+                                        )}
                                     <div className='profile-box'>
                                         <div className="img">
-                                            <img src={user.photoURL} alt="profile" />
+                                            {user && user.photoURL ? (
+                                                <img src={user.photoURL} alt="profile" />
+                                            ):(
+                                                <img src="images/user-found.png" alt="user" />
+                                            )}
+                                            
                                         </div>
                                             <h6>{user.displayName}</h6>
                                             <span>{user.email}</span>

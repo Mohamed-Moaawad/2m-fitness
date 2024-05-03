@@ -45,7 +45,8 @@
     margin-left: 8px;
 }
 
-.cart-page .content table td button,
+.cart-page .content table td button.delete,
+.cart-page .content table td .quantity-btn,
 .cart-page .content table td h4{
     position: absolute;
     top: 50%;
@@ -53,11 +54,29 @@
 }
 
 .cart-page .content table td button{
-    border: none;
+    /* border: none; */
     background-color: transparent;
+    color: #fff;
+    font-size: 28px;
 }
 
 .cart-page .content table td button svg{
     font-size: 28px;
     color: rgb(149, 0, 0);
+}
+
+.cart-page .content table td .quantity-btn{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid var(--text-color); */
+    box-shadow: 0 0 2px var(--text-color);
+}
+
+.cart-page .content table td .quantity-btn span{
+    margin: 0 12px;
+    font-size: 25px;
+}
+
+.cart-page .content table td .quantity-btn button{
+    padding: 0 5px;
 }

@@ -24,8 +24,8 @@ import Aos from 'aos'
 
 
 const Shop = () => {
-    const [valueCollection, setValueCollection] = useState(collection(db, 'Products'))
-    const [value, loading, error] = useCollection(valueCollection)
+    const [valueCollection, setValueCollection] = useState()
+    const [value, loading, error] = useCollection(collection(db, 'Products'))
 
     const [sm, setSm] = useState(1)
     const [md, setMd] = useState(2)

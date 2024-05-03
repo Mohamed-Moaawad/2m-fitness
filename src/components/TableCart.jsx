@@ -1,5 +1,5 @@
 import { collection, deleteDoc, doc, updateDoc } from 'firebase/firestore'
-import React from 'react'
+import React, { useState } from 'react'
 import { RiDeleteBinLine } from 'react-icons/ri'
 import { Card, Placeholder, Table } from 'react-bootstrap'
 
@@ -7,13 +7,27 @@ import { useCollection } from 'react-firebase-hooks/firestore'
 import { db } from '../firebase/config'
 
 const TableCart = ({user}) => {
-
     const [value, loading, error] = useCollection(collection(db, `cart - ${user.uid}`))
 
         
     const deleteFromCart = async(item)=>{
         await deleteDoc(doc(db, `cart - ${user.uid}`, `${item.data().id}`))
     }
+
+
+    const plusItem = async(item)=>{
+        await updateDoc(doc(db, `cart - ${user.uid}`, `${item.data().id}`),{
+            quantity: item.data().quantity + 1
+        })
+    }
+    const minusItem = async(item)=>{
+        if(item.data().quantity > 1){
+            await updateDoc(doc(db, `cart - ${user.uid}`, `${item.data().id}`),{
+                quantity : item.data().quantity - 1
+            })
+        }
+    }
+
 
     return (
         <div>
@@ -22,6 +36,7 @@ const TableCart = ({user}) => {
                             <tr>
                                 <th>PRODUCT</th>
                                 <th>quantity</th>
+                                <th>delete</th>
                                 <th>total</th>
                             </tr>
                         </thead>
@@ -94,16 +109,23 @@ const TableCart = ({user}) => {
                                         </div>
                                         <div className="text">
                                             <h5>{item.data().title}</h5>
-                                            <h6>${item.data().price}</h6>
+                                            <h6>${item.data().discount ? item.data().discount : item.data().price}</h6>
                                         </div>
                                     </td>
                                     <td>
-                                        <button onClick={()=>{
+                                        <div className='quantity-btn'>
+                                            <button onClick={()=>plusItem(item)}>+</button>
+                                            <span>{item.data().quantity}</span>
+                                            <button onClick={()=>minusItem(item)}>-</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button className='delete' onClick={()=>{
                                             deleteFromCart(item)
                                         }}><RiDeleteBinLine /></button>
                                     </td>
                                     <td>
-                                        <h4>$450.00</h4>
+                                        <h4>${item.data().discount ? item.data().discount * item.data().quantity : item.data().quantity * item.data().price}</h4>
                                     </td>
                                 </tr>
                             ))}

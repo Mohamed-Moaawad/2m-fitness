@@ -60,7 +60,7 @@ const SignUp = () => {
             }).then(() => {
                 // Profile updated!
                 // ... 
-                navigate('/sign-in')
+                navigate('/')
 
             }).catch((error) => {
             // An error occurred

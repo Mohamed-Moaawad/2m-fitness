@@ -55,7 +55,7 @@ const SignIn = () => {
             // Signed in 
             const user = userCredential.user;
             // ...
-            console.log(user);
+            // console.log(user);
 
             navigate('/')
 
