@@ -19,6 +19,10 @@
     border-top: none;
 }
 
+.cart-page .content table th{
+    text-transform: capitalize;
+}
+
 .cart-page .content table th,
 .cart-page .content table td{
     background-color: transparent;
@@ -26,6 +30,15 @@
     color: var(--white-color);
     position: relative;
     align-items: center;
+}
+
+@media only screen and (max-width:1125px){
+    .cart-page .content table th,
+    .cart-page .content table td{
+        width: 25%;
+        text-align: center;
+
+    }
 }
 
 .cart-page .content table td .img{
@@ -54,10 +67,11 @@
 }
 
 .cart-page .content table td button{
-    /* border: none; */
+    border: none;
     background-color: transparent;
     color: #fff;
     font-size: 28px;
+    text-align: center;
 }
 
 .cart-page .content table td button svg{

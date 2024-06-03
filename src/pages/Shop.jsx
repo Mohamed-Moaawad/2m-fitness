@@ -24,8 +24,8 @@ import Aos from 'aos'
 
 
 const Shop = () => {
-    const [valueCollection, setValueCollection] = useState()
-    const [value, loading, error] = useCollection(collection(db, 'Products'))
+    const [valueCollection, setValueCollection] = useState(collection(db, 'Products'))
+    const [value, loading, error] = useCollection(valueCollection)
 
     const [sm, setSm] = useState(1)
     const [md, setMd] = useState(2)
@@ -73,7 +73,8 @@ const Shop = () => {
 
     // functions filter By Category
     const filterByCategoryEquipments = ()=>{
-        setValueCollection(query(collection(db, 'Products'), where("category", "==", "Equipments")))
+        console.log(setValueCollection(query(collection(db, 'Products'), where("category", "==", "Equipments"))))
+        
     }
     const filterByCategorySupplements = ()=>{
         setValueCollection(query(collection(db, 'Products'), where("category", "==", "Supplements")))
@@ -114,7 +115,7 @@ const Shop = () => {
                                     <div className="category">
                                             <h4>category</h4>
                                         <ul>
-                                            <li onClick={filterByCategoryEquipments}>Equipments</li>
+                                            <li onClick={filterByCategoryEquipments}>Equipmentss</li>
                                             <li onClick={filterByCategorySupplements}>supplements</li>
                                         </ul>
                                     </div>
