@@ -10,12 +10,12 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBDEsoBiZwBHuj7ugToZeQUqNv854GNuu0",
-    authDomain: "m-fitness-128bb.firebaseapp.com",
-    projectId: "m-fitness-128bb",
-    storageBucket: "m-fitness-128bb.appspot.com",
-    messagingSenderId: "19767502810",
-    appId: "1:19767502810:web:dd7e6b4b9cf8cdd352c2e3"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
