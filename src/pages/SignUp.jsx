@@ -38,7 +38,6 @@ const SignUp = () => {
         setTogglePassword(togglePassword ? false : true)
     }
 
-
     const navigate = useNavigate()
 
     // function --> Create User

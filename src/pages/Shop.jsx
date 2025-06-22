@@ -249,6 +249,7 @@ const Shop = () => {
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
+
                                                 <Col sm={12} md={6} lg={3} className='mt-3'>
                                                     <Card style={{ width: '100%', backgroundColor: 'var(--bg-color)', height:'350px', border:'none' }}>
                                                         <Placeholder  className='text-center' animation="glow">
@@ -265,6 +266,7 @@ const Shop = () => {
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
+
                                                 <Col sm={12} md={6} lg={3} className='mt-3'>
                                                     <Card style={{ width: '100%', backgroundColor: 'var(--bg-color)', height:'350px', border:'none' }}>
                                                         <Placeholder  className='text-center' animation="glow">
@@ -281,6 +283,7 @@ const Shop = () => {
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
+                                                
                                                 <Col sm={12} md={6} lg={3} className='mt-3'>
                                                     <Card style={{ width: '100%', backgroundColor: 'var(--bg-color)', height:'350px', border:'none' }}>
                                                         <Placeholder  className='text-center' animation="glow">
